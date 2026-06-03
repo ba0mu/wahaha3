@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>哇哈哈 AD钙奶 30周年纪念 - 童年味觉性格测试</title>
+  
+  <!-- CSS Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            childlike: ['"ZCOOL KuaiLe"', 'cursive', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
+          animation: {
+            'float-gentle': 'floatGentle 4s ease-in-out infinite',
+            'float-slow': 'floatSlow 5s ease-in-out infinite',
+            'sway-bottle': 'swayBottle 4.5s ease-in-out infinite',
+            'spin-slow': 'spinSlow 12s linear infinite',
+            'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+            'bubble-up': 'bubbleUp 6s ease-in-out infinite',
+            'float-star': 'floatStar 3.5s ease-in-out infinite',
+            'float-yellow': 'floatYellow 4s ease-in-out infinite',
+            'float-pink': 'floatPink 4.5s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/css">
+    /* Reset & Viewport Constraints to prevent any page overflow */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+      background-color: #1E293B;
+    }
+
+    /* Global retro mosaic cursors */
+    html, body, #app-root, * {
+      cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h2v16h2v-2h2v-2h2v-2h2v-2h2V6h2V4h2V2h2V0H0zm4 4h4v2H4zm4 4h4v2H8zm4 4h4v2h-4z' fill='%231a1a1a'/%3E%3Cpath d='M2 2h2v12h2v-2h2v-2h2v-2h2V6h2V4h2v-2H6v2H4v2H2z' fill='%23ffffff'/%3E%3Crect x='4' y='4' width='2' height='2' fill='%2322C55E'/%3E%3Crect x='6' y='6' width='2' height='2' fill='%2322C55E'/%3E%3C/svg%3E") 0 0, auto;
+    }
+
+    a, button, select, input, textarea, [role="button"], .cursor-pointer, .hover\:scale-105 {
+      cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' shape-rendering='crispEdges'%3E%3Cpath d='M6 0h4v2H6zm6 2h2v2h-2zm2 2h2v8h-2zm-2 8h2v2h-2zm-4 2h4v2H8zm-4-2h4v2H4zm-2-4h2v4H2zm4-6h2v6H6z' fill='%231a1a1a'/%3E%3Cpath d='M8 2h2v10H8zm4 2h2v6h-2zm-6 2h2v6H6zm-2 2h2v4H4zm6 6h2v2h-2zm-4-2h4v2H6zm4-8h2V4h-2z' fill='%23ffffff'/%3E%3Crect x='8' y='6' width='2' height='2' fill='%23EF4444'/%3E%3C/svg%3E") 8 0, pointer !important;
+    }
+
+    .retro-grid {
+      background-size: 20px 20px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    }
+    
+    /* Precision H5 container matching mobile screen or styled modern iPhone 14 Pro Max frame on desktop */
+    .h5-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      overflow: hidden;
+      box-sizing: border-box;
+      
+      /* Highly robust non-squashing fluid styling */
+      width: 100%;
+      height: 100%;
+      max-width: 430px;
+      max-height: 844px;
+      margin: auto;
+      border: 0;
+      transition: max-width 0.3s ease, max-height 0.3s ease;
+    }
+
+    /* For true smaller mobile device viewports under 450px, run full bleed */
+    @media (max-width: 450px) {
+      .h5-container {
+        max-height: 100% !important;
+        height: 100vh !important;
+        border-radius: 0 !important;
+      }
+    }
+
+    /* Beautiful responsive framework wrapping it in a flawless iPhone 14 Pro Max styled frame on desktop/wider viewports */
+    @media (min-width: 450px) and (min-height: 600px) {
+      .h5-container {
+        border: 9px solid #0F172A;
+        border-radius: 44px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4), 10px 10px 0px #0F172A;
+      }
+    }
+    
+    @keyframes floatGentle {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-6px) rotate(3deg); }
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(-4deg); }
+    }
+
+    @keyframes swayBottle {
+      0%, 100% { transform: translateY(0px) rotate(-12deg); }
+      50% { transform: translateY(-5px) rotate(-10deg); }
+    }
+
+    @keyframes spinSlow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.9; }
+    }
+
+    @keyframes bubbleUp {
+      0% { transform: translateY(0px) scale(1); opacity: 0.25; }
+      50% { transform: translateY(-18px) scale(1.2); opacity: 0.45; }
+      100% { transform: translateY(0px) scale(1); opacity: 0.25; }
+    }
+
+    @keyframes floatStar {
+      0%, 100% { transform: translateY(0px) rotate(-10deg) scale(0.95); }
+      50% { transform: translateY(-4px) rotate(10deg) scale(1.1); }
+    }
+
+    @keyframes floatYellow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-5px) rotate(15deg); }
+    }
+
+    @keyframes floatPink {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(4px) rotate(-15deg); }
+    }
+
+    /* Cartoon Borders */
+    .cartoon-border {
+      border: 3px solid #1a1a1a;
+      box-shadow: 4px 4px 0px #1a1a1a;
+    }
+    
+    .cartoon-border-sm {
+      border: 2px solid #1a1a1a;
+      box-shadow: 2px 2px 0px #1a1a1a;
+    }
+
+    .cartoon-shadow-lg {
+      box-shadow: 8px 8px 0px #1a1a1a;
+    }
+    
+    /* Custom Scrollbar for results */
+    .custom-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: rgba(0,0,0,0.05);
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: rgba(4, 120, 87, 0.3);
+      border-radius: 4px;
+    }
+  </style>
+
+  <!-- React & Babel CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body class="select-none overflow-hidden">
+
+  <!-- Root Mount Node -->
+  <div id="app-root"></div>
+
+  <!-- Main Application Script (Babel Compiler) -->
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    // ==================== GLOBAL QUESTIONS AND SCORING DATA ====================
+    const QUESTIONS = [
+      {
+        id: 1,
+        title: "放学零食铃 🔔",
+        subtitle: "如果时光倒流回小学三年级，下课铃惊醒了趴在课桌上的你，你的第一反应是？",
+        options: [
+          { id: "1A", text: "拉上同桌，一溜烟冲向胡同口看爆米花‘嘭’的一声！", flavorScores: { original: 3, lactic: 1 } },
+          { id: "1B", text: "和好朋友手拉手，去小卖部买香香甜甜的彩虹软糖和草莓奶。", flavorScores: { strawberry: 3, peach: 1 } },
+          { id: "1C", text: "不急着走，慢吞吞地把橡皮屑和铅笔屑收纳好，折一个精美纸鹤送给后座。", flavorScores: { collagen: 3, strawberry: 1 } },
+          { id: "1D", text: "抄起外套飞奔操场占篮球架/单杠，今天非要把对方‘干趴下’! ", flavorScores: { lactic: 3, original: 1 } },
+          { id: "1E", text: "望着天边的晚霞，脑补自己是刚打败怪兽、正隐藏身份的超能力中二英雄。", flavorScores: { peach: 3, collagen: 1 } }
+        ]
+      },
+      {
+        id: 2,
+        title: "零花钱大作战 🪙",
+        subtitle: "历经‘千辛万苦’通过考试，你终于攒够了第一笔让人眼红的5块大洋，你会？",
+        options: [
+          { id: "2A", text: "买下那一整排带着甜香、闪闪发光的卡通镭射贴纸和手账本！", flavorScores: { strawberry: 3, peach: 1 } },
+          { id: "2B", text: "二话不说，直接来两瓶绿色包装的经典AD钙奶，酸甜插管一饮而尽！", flavorScores: { original: 3, lactic: 1 } },
+          { id: "2C", text: "攒着存进小猪储蓄罐，或者去买本揭秘太空/折纸奥秘的科普小画册。", flavorScores: { collagen: 3, peach: 1 } },
+          { id: "2D", text: "果断换成威风凛凛的双管大水枪，或者到电玩城买10个充满梦想的铜币！", flavorScores: { lactic: 3, original: 1 } },
+          { id: "2E", text: "去买街角现做的心形桃子刨冰，哪怕化了也要看着红通通的冰沙哼着歌。", flavorScores: { peach: 3, strawberry: 1 } }
+        ]
+      },
+      {
+        id: 3,
+        title: "夏午声波雷达 📻",
+        subtitle: "炎炎夏日昏黄的午后，电风扇嘎吱嘎吱响，窗外哪种声音能瞬间唤醒你的童年灵魂？",
+        options: [
+          { id: "3A", text: "树梢蝉鸣与冰镇汽水咕嘟咕嘟冒泡的声音，像风铃在唱歌。", flavorScores: { peach: 3, strawberry: 1 } },
+          { id: "3B", text: "街坊大喇叭里放着的四驱车动画片主题曲“冲吧！旋风冲锋！”", flavorScores: { lactic: 3, original: 1 } },
+          { id: "3C", text: "巷子深处传来熟悉的‘磨剪子嘞戗菜刀’或摇铃铛的老手艺人脚步声。", flavorScores: { original: 3, collagen: 1 } },
+          { id: "3D", text: "细碎的折纸声、铅笔摩擦草稿纸的沙沙声，宁静而专注。", flavorScores: { collagen: 3, strawberry: 1 } },
+          { id: "3E", text: "课后操场上女孩子们一边拍着皮球/跳橡皮筋，一边欢快唱起的数数童谣。", flavorScores: { strawberry: 3, lactic: 1 } }
+        ]
+      },
+      {
+        id: 4,
+        title: "十分钟快乐游乐园 🛝",
+        subtitle: "短暂的课间十分钟，走廊上围满了一圈人正在热火朝天地‘拍卡片/跳马’，你在哪里？",
+        options: [
+          { id: "4A", text: "绝不缺席！作为首席高手直接下场挑战，全场高呼‘必杀技’！", flavorScores: { lactic: 3, original: 1 } },
+          { id: "4B", text: "在一旁给好朋友加油打气，贴心地递上一瓶插好吸管的AD钙奶，比赢的人还开心！", flavorScores: { strawberry: 3, peach: 1 } },
+          { id: "4C", text: "在教室座位上，托着腮帮子在课本边角画一连串能翻页动起来的小火柴人。", flavorScores: { peach: 3, collagen: 1 } },
+          { id: "4D", text: "淡定地围观，脑海自动计算刚才卡片受到的重力加速度、弹射轨迹与物理角度。", flavorScores: { collagen: 3, original: 1 } },
+          { id: "4E", text: "跟着起哄，玩经典的剪刀石头布，输了的请客吃一整板五彩彩虹糖。", flavorScores: { original: 3, lactic: 1 } }
+        ]
+      },
+      {
+        id: 5,
+        title: "童年秘密基地 🏕️",
+        subtitle: "放学回家，你和小伙伴悄悄物色到了一个‘没人知道’的安全小角落，你会怎么装饰这个基地？",
+        options: [
+          { id: "5A", text: "摆满大白兔糖、经典原味AD钙奶、玻璃弹珠，直接打造成快乐零食铺！", flavorScores: { original: 3, lactic: 1 } },
+          { id: "5B", text: "用粉红彩带、手账本、彩色流苏，把小地方布置得有说有笑、温馨浪漫。", flavorScores: { strawberry: 3, peach: 1 } },
+          { id: "5C", text: "挂上自制的‘太空星系航行图’、精密折纸船模，俨然一个秘密研究所！", flavorScores: { collagen: 3, strawberry: 1 } },
+          { id: "5D", text: "插上一面手拆硬纸板的威风‘战旗’，放满高压弹弓和双管水枪！", flavorScores: { lactic: 3, original: 1 } },
+          { id: "5E", text: "摆满珍藏的奥特曼英雄/外星飞碟科普书，关上灯用手电筒自创科幻极光！", flavorScores: { peach: 3, collagen: 1 } }
+        ]
+      }
+    ];
+
+    const PERSONALITY_RESULTS = {
+      original: {
+        flavor: 'original',
+        mbti: 'ESFP / ISFP',
+        title: "快乐弹珠星人 🟢",
+        tagline: "酸甜可爱好人缘，快乐生活冒险家",
+        description: "你是AD钙奶最忠实的经典拥趸！嘴上说着随缘、无所谓，但在朋友聚会和童年大院里，你永远是那个带着香甜治愈光环的‘社交发光体’。你拥有敏锐的快乐嗅觉，极其善于捕捉生活中的小美好。你相信人活着最重要的是快乐无忧，就像30年如一日酸甜可口的原味AD钙奶，不论男女老少，只要靠近你，都会被你的率真与开朗深深治愈！",
+        personalityTraits: ["社交太阳能", "吸管插得最快", "知足常乐", "爆米花死党"],
+        childhoodScene: "胡同口围观爆米花机，一兜子玻璃弹珠在口袋里清脆作响，分享原味AD钙奶的纯粹时刻。",
+        vintageObject: "七彩玻璃弹珠",
+        goldenRatio: "蜜桃味 (ENFP) · 浪漫默契死党",
+        mbtiDetails: { energy: "92% 元气满分 (E)", info: "78% 活在当下 (S)", decision: "65% 感性第一 (F)", action: "85% 随兴出发 (P)" }
+      },
+      strawberry: {
+        flavor: 'strawberry',
+        mbti: 'INFP / ENFJ',
+        title: "治愈星愿小草莓 🍓",
+        tagline: "软萌贴心守护者，温柔似水的诗意灵魂",
+        description: "你是纯度100%的草莓甜心！心思细腻，像熟透的草莓那样散发着柔和而甜蜜的气息。在童年里，你是那个会把零食分给所有小朋友、温柔安慰跌倒玩伴的小天使。比起喧闹，你更向往诗意的慢时光。你会在AD钙奶的白色塑料瓶上画小猫，会给每一折千纸鹤许下一个天真的心愿，你的温柔包容了世界上一切粗糙，让人忍不住想永远呵护你！",
+        personalityTraits: ["超能力是温柔", "千纸鹤折叠大师", "细节捕捉狂魔", "贴心草莓软糖"],
+        childhoodScene: "阳光透过纱窗的午后，折满一罐玻璃瓶的许愿星与千纸鹤，写满悄悄话的小密码本。",
+        vintageObject: "卡通镭射手账本",
+        goldenRatio: "不老胶原蛋白味 (INTJ) · 默默守护骑士",
+        mbtiDetails: { energy: "89% 细腻敏感 (I)", info: "84% 灵性探索 (N)", decision: "91% 温柔共情 (F)", action: "72% 随心感悟 (P)" }
+      },
+      peach: {
+        flavor: 'peach',
+        mbti: 'ENFP / INFJ',
+        title: "浪漫桃气梦想家 🍑",
+        tagline: "脑洞大开中二魂，永远闪闪发光的浪漫派",
+        description: "你是一只自带冒泡属性的‘桃气梦想家’！性格活泼、奇思妙想不断，脑袋里住着大雄的时光穿梭机 and 一万只遨游宇宙的派大星。你热爱一切具有色彩、新奇、甚至略带神秘感的事物，哪怕长大了，你的内心深处依然保护着最绚烂的中二热血。你相信天边的晚霞是打败怪兽后的胜利极光，像甜润而具有热带风味的蜜桃乳酸，一口就让人元气炸裂！",
+        personalityTraits: ["脑洞塞满银河", "坚信光之巨人", "夏日刨冰爱好者", "行走的笑点制造机"],
+        childhoodScene: "骑着自行车追赶火烧云，在水泥墙上画下自己的时光机造型，对着遥远夜空诉说超能力梦想。",
+        vintageObject: "万花筒透镜",
+        goldenRatio: "极速乳酸菌味 (ESTP) · 鬼点子同盟",
+        mbtiDetails: { energy: "88% 热力全开 (E)", info: "90% 脑洞风暴 (N)", decision: "75% 感性浪漫 (F)", action: "80% 天马行空 (P)" }
+      },
+      collagen: {
+        flavor: 'collagen',
+        mbti: 'INTJ / INTP',
+        title: "不老极几何折纸家 💎",
+        tagline: "细节控机智导师，外冷内热的冷静核心",
+        description: "你是冷静优雅的‘折纸建筑师’，也是AD钙奶胶原蛋白风味的化身。你从小就是个细节控智多星，喜欢安静地玩积木、搞小发明，拆解坏掉的玩具遥控车来一探究竟。你不喜欢随波逐流的喧闹，但你用极其敏锐的观察力和高度负责的态度默默守护身边的人。你的聪明不锋利，你的温柔很高级，像含有科技养分与细腻胶原蛋白的乳饮，醇香回甘，历久不衰！",
+        personalityTraits: ["解谜分析师", "四驱车金牌改装", "面冷心热", "储蓄罐保管大佬"],
+        childhoodScene: "阳光打在书桌，全神贯注擦铅笔字重绘轨道，或者用冰棒木棍拼装出庞大的微缩基地。",
+        vintageObject: "多功能机关文具盒",
+        goldenRatio: "经典原味 (ESFP) · 互补吸铁石",
+        mbtiDetails: { energy: "94% 理性沉静 (I)", info: "85% 逻辑推演 (N)", decision: "88% 硬核思考 (T)", action: "82% 精细逻辑 (J)" }
+      },
+      lactic: {
+        flavor: 'lactic',
+        mbti: 'ESTP / ENTP',
+        title: "元气乳酸飓风王 🌀",
+        tagline: "街头运动小霸王，永动机般的能量风暴",
+        description: "你是整条街最靓、最野、最元气的运动风暴！生命狂热、精力充沛，仿佛自带三台马达，永远像大风车一样不知疲倦。斗鸡、踢毽子、打水仗、摸鱼抓虾...凡是需要流汗和挑战的运动全是你的游乐场。哪怕和小伙伴玩游戏蹭了一膝盖泥巴，大哭大笑两声，拍拍土，喝一瓶畅快解渴的乳酸菌风味，两秒钟就满血复活、大笑着继续开始新一轮的追逐！",
+        personalityTraits: ["孩子王本王", "流汗不流泪", "运动细胞爆表", "水枪战神"],
+        childhoodScene: "在泼水节般的马路边用双管水枪大战击败所有玩伴，满头大汗笑着大喊再来一局。",
+        vintageObject: "高压双管大水枪",
+        goldenRatio: "草莓味 (INFP) · 互补陪伴伙伴",
+        mbtiDetails: { energy: "95% 动能超爆 (E)", info: "81% 实干直觉 (S)", decision: "70% 果敢无畏 (T)", action: "90% 闪击战将 (P)" }
+      }
+    };
+
+    const FLAVOR_IMAGES = {
+      original: 'https://i.postimg.cc/qBjxNM2G/450xin-AD.png',
+      lactic: 'https://i.postimg.cc/pXSQBGGv/450xin-AD-ru-suan-jun.png',
+      collagen: 'https://i.postimg.cc/7Pmn5YS9/450xin-AD-jiao-yuan-dan-bai.png',
+      peach: 'https://i.postimg.cc/L6WkVCCq/450shui-mi-tao-wei.png',
+      strawberry: 'https://i.postimg.cc/gk7yKSSk/450cao-mei-wei.png'
+    };
+
+    // ==================== SYNTHETIC RETRO AUDIO SYSTEM ====================
+    let audioCtx = null;
+    function getAudioContext() {
+      try {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+      } catch (err) {
+        console.warn("Speech/audio error:", err);
+      }
+      return audioCtx;
+    }
+
+    function playRetroClick() {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.frequency.setValueAtTime(400, t);
+      osc.frequency.exponentialRampToValueAtTime(1200, t + 0.08);
+      gain.gain.setValueAtTime(0.12, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.08);
+      osc.start(t);
+      osc.stop(t + 0.09);
+    }
+
+    function playRetroBubble() {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(150, t);
+      osc.frequency.exponentialRampToValueAtTime(600, t + 0.15);
+      gain.gain.setValueAtTime(0.1, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+      osc.start(t);
+      osc.stop(t + 0.16);
+    }
+
+    function playRetroOption() {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(523.25, t);
+      osc.frequency.setValueAtTime(659.25, t + 0.06);
+      gain.gain.setValueAtTime(0.08, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+      osc.start(t);
+      osc.stop(t + 0.16);
+    }
+
+    function playRetroSuccess() {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const t = ctx.currentTime;
+      const freqs = [523.25, 659.25, 783.99, 1046.50];
+      freqs.forEach((freq, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, t + idx * 0.08);
+        gain.gain.setValueAtTime(0, t + idx * 0.08);
+        gain.gain.linearRampToValueAtTime(0.1, t + idx * 0.08 + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.01, t + idx * 0.08 + 0.12);
+        osc.start(t + idx * 0.08);
+        osc.stop(t + idx * 0.08 + 0.15);
+      });
+    }
+
+    function playRetroPage() {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(300, t);
+      osc.frequency.linearRampToValueAtTime(200, t + 0.15);
+      gain.gain.setValueAtTime(0.08, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+      osc.start(t);
+      osc.stop(t + 0.16);
+    }
+
+    // ==================== INLINE NOSTALGIC SVG GRAPHICS ====================
+    function GlassMarble() {
+      return (
+        <svg viewBox="0 0 32 32" className="w-full h-full">
+          <circle cx="16" cy="16" r="14" fill="#67E8F9" stroke="#1A1A1A" strokeWidth="2" fillOpacity="0.5" />
+          <path d="M 6 12 Q 16 22 26 12" stroke="#22C55E" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+          <path d="M 10 16 Q 16 26 22 16" stroke="#F59E0B" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+          <circle cx="11" cy="11" r="2" fill="#FFF" />
+        </svg>
+      );
+    }
+
+    function WaterGun() {
+      return (
+        <svg viewBox="0 0 48 32" className="w-full h-full">
+          <path d="M 10 18 H 36 V 12 H 10 Z" fill="#3B82F6" stroke="#1a1a1a" strokeWidth="2.5" />
+          <path d="M 28 6 H 34 V 12 H 28 Z" fill="#EF4444" stroke="#1a1a1a" strokeWidth="2.5" />
+          <path d="M 12 18 L 10 28 H 16 L 18 18" fill="#10B981" stroke="#1a1a1a" strokeWidth="2.5" />
+          <path d="M 4 14 C 4 14 8 10 10 14 Z" fill="#FBBF24" stroke="#1a1a1a" strokeWidth="2" />
+        </svg>
+      );
+    }
+
+    function Joystick() {
+      return (
+        <svg viewBox="0 0 32 32" className="w-full h-full">
+          <rect x="6" y="16" width="20" height="10" rx="3" fill="#E2E8F0" stroke="#1a1a1a" strokeWidth="2" />
+          <line x1="16" y1="16" x2="16" y2="8" stroke="#1a1a1a" strokeWidth="4" />
+          <circle cx="16" cy="6" r="4.5" fill="#EF4444" stroke="#1a1a1a" strokeWidth="2" />
+          <circle cx="21" cy="21" r="1.5" fill="#F59E0B" />
+        </svg>
+      );
+    }
+
+    // ==================== REACT PAGES ====================
+
+    // --- COVER PAGE (Fully updated with gentle swaying, no active circular orbits, and no light bubble pops) ---
+    function CoverPage({ onStartQuiz }) {
+      const [name, setName] = useState('');
+      const [selectedGender, setSelectedGender] = useState('boy');
+      const [errorMsg, setErrorMsg] = useState('');
+      const [showModal, setShowModal] = useState(false);
+
+      const handleStartAttempt = () => {
+        playRetroClick();
+        setShowModal(true);
+      };
+
+      const handleRegisterAndStart = () => {
+        const trimmed = name.trim();
+        if (!trimmed) {
+          setErrorMsg('名字不能为空，请留下你的童味称呼呀~');
+          playRetroBubble();
+          return;
+        }
+        setErrorMsg('');
+        playRetroClick();
+        onStartQuiz(trimmed, selectedGender);
+      };
+
+      return (
+        <div className="w-full h-full relative overflow-hidden font-sans bg-[#E6F4EA]">
+          {/* Background layer */}
+          <img
+            src="https://i.postimg.cc/vZT4ksBD/bei-jing.png"
+            className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
+            referrerPolicy="no-referrer"
+          />
+          {/* Framer border outline */}
+          <img
+            src="https://i.postimg.cc/MpLn8FMz/bei-jing-kuang.png"
+            className="absolute inset-0 w-full h-full object-fill z-10 pointer-events-none"
+            referrerPolicy="no-referrer"
+          />
+
+          {/* Glowing particle background bubbles */}
+          <div className="absolute inset-0 z-[11] pointer-events-none overflow-hidden">
+            <div className="absolute rounded-full bg-white/30 border border-white/40 w-2 h-2 left-[15%] top-[38%] animate-bubble-up"></div>
+            <div className="absolute rounded-full bg-white/30 border border-white/40 w-3 h-3 left-[84%] top-[32%] animate-bubble-up" style={{ animationDelay: '1.2s' }}></div>
+            <div className="absolute rounded-full bg-white/30 border border-white/40 w-2 h-2 left-[22%] top-[68%] animate-bubble-up" style={{ animationDelay: '1.8s' }}></div>
+            <div className="absolute rounded-full bg-white/30 border border-white/40 w-2.5 h-2.5 left-[76%] top-[62%] animate-bubble-up" style={{ animationDelay: '0.6s' }}></div>
+          </div>
+
+          {/* Smiling Sun top left */}
+          <div className="absolute top-[4%] left-[4%] z-[30] w-[17%] max-w-[80px] hover:scale-105 transition-transform cursor-pointer" onClick={playRetroBubble}>
+            <img
+              src="https://i.postimg.cc/d0TLQjrC/tai-yang.png"
+              className="w-full h-auto object-contain filter drop-shadow-[0_0_10px_rgba(251,191,36,0.5)]"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Sparkles / Candies layer */}
+          <div className="absolute inset-0 z-[22] pointer-events-none overflow-hidden">
+            {/* Top center mini star */}
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute top-[4.5%] left-[23%] w-[4%] max-w-[16px] object-contain opacity-75 filter drop-shadow-[0_0_6px_rgba(255,255,255,0.8)]"
+              referrerPolicy="no-referrer"
+            />
+            {/* Top right purple lollipop */}
+            <img
+              src="https://i.postimg.cc/fTB38LMq/bang-bang-tang2.png"
+              className="absolute top-[6%] right-[10%] w-[10%] max-w-[48px] object-contain cursor-pointer pointer-events-auto filter drop-shadow-[1px_2px_4px_rgba(0,0,0,0.12)] transition-transform hover:scale-110 rotate-12"
+              onClick={playRetroBubble}
+              referrerPolicy="no-referrer"
+            />
+            {/* Top right mini star */}
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute top-[4%] right-[22%] w-[5%] max-w-[20px] object-contain opacity-70 animate-pulse-glow"
+              referrerPolicy="no-referrer"
+            />
+            {/* Blue lollipop left */}
+            <img
+              src="https://i.postimg.cc/7YmCK6qs/bang-bang-tang1.png"
+              className="absolute top-[28%] left-[10%] w-[9%] max-w-[44px] object-contain cursor-pointer pointer-events-auto filter drop-shadow-[1px_2px_4px_rgba(0,0,0,0.12)] transition-transform hover:scale-110 -rotate-12"
+              onClick={playRetroBubble}
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Wahaha Logo */}
+          <div className="absolute top-[8.5%] left-1/2 -translate-x-1/2 z-[21] w-[26%] max-w-[110px] pointer-events-auto cursor-pointer" onClick={playRetroClick}>
+            <img
+              src="https://i.postimg.cc/vBFD4xvd/wa-ha-halogo.png"
+              className="w-full object-contain"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* 30th Anniversary Logo */}
+          <div className="absolute top-[14.5%] left-1/2 -translate-x-1/2 z-[21] w-[34%] max-w-[140px] pointer-events-auto" onClick={playRetroBubble}>
+            <img
+              src="https://i.postimg.cc/SNDXgsmw/30th.png"
+              className="w-full object-contain cursor-pointer transition-transform hover:scale-105"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Main Title Banner */}
+          <div className="absolute top-[21.5%] left-1/2 -translate-x-1/2 w-[65%] max-w-[280px] z-[21] pointer-events-none">
+            <img
+              src="https://i.postimg.cc/V6Q5J0FC/zhu-ti-zi.png"
+              className="w-full object-contain filter drop-shadow-[0_4px_10px_rgba(0,80,20,0.15)]"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Campaign subtitle */}
+          <div className="absolute top-[37%] left-1/2 -translate-x-1/2 z-[21] w-[35%] max-w-[135px] pointer-events-none">
+            <img
+              src="https://i.postimg.cc/mgnPG5zy/qi-hua.png"
+              className="w-full object-contain"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Flank elements */}
+          <div className="absolute inset-0 z-[20] pointer-events-none overflow-hidden">
+            <img
+              src="https://i.postimg.cc/3xqkHc49/tang-guo.png"
+              className="absolute top-[43%] left-[12%] w-[7.5%] max-w-[28px] object-contain filter drop-shadow-[1px_1.5px_3px_rgba(0,0,0,0.1)] animate-float-gentle"
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/htYXq5zs/tang-guo2.png"
+              className="absolute top-[42%] right-[12%] w-[6%] max-w-[20px] opacity-95 filter drop-shadow-[1px_1px_2px_rgba(0,0,0,0.1)] animate-spin-slow"
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute top-[21%] right-[11%] w-[4.5%] max-w-[18px] opacity-45 scale-x-[-1]"
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute top-[56%] right-[13%] w-3 h-3 object-contain opacity-55"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Milky splash base */}
+          <div className="absolute bottom-[13%] left-1/2 -translate-x-1/2 w-[85%] max-w-[380px] h-auto z-[15] pointer-events-none">
+            <img
+              src="https://i.postimg.cc/4x0YTS7d/nai-ye.png"
+              className="w-full h-auto object-contain opacity-95"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Center Product Bottle - GENTLE SWAYING AND SWAYING DECORATIVE STARS (NO WHITE DOTS, NO CIRCLES) */}
+          <div className="absolute bottom-[15.5%] left-1/2 -translate-x-1/2 w-[26%] max-w-[110px] z-[25] cursor-pointer" onClick={playRetroBubble}>
+            
+            {/* Inner Wrapper which hosts the core sway animation without disrupting outer translate-x centering */}
+            <div className="relative w-full h-full animate-sway-bottle">
+              {/* Float star top left - GENTLE FLOAT */}
+              <img
+                src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+                className="absolute -top-3 -left-4 w-[15px] h-[15px] object-contain opacity-85 z-[10] animate-float-star"
+                referrerPolicy="no-referrer"
+              />
+              {/* Float star candy mid right - GENTLE FLOAT */}
+              <img
+                src="https://i.postimg.cc/htYXq5zs/tang-guo2.png"
+                className="absolute top-4 -right-5 w-[18px] h-[18px] object-contain z-[30] animate-float-yellow"
+                referrerPolicy="no-referrer"
+              />
+              {/* Float pink candy bottom left - GENTLE FLOAT */}
+              <img
+                src="https://i.postimg.cc/3xqkHc49/tang-guo.png"
+                className="absolute bottom-6 -left-6 w-[18px] h-[18px] object-contain z-[30] animate-float-pink"
+                referrerPolicy="no-referrer"
+              />
+
+              {/* Core Bottle */}
+              <img
+                src="https://i.postimg.cc/qBjxNM2G/450xin-AD.png"
+                className="w-full object-contain drop-shadow-[3px_6px_10px_rgba(0,30,0,0.18)]"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute -bottom-1 left-2 right-2 h-2.5 bg-emerald-950/15 rounded-full blur-md -z-10" />
+            </div>
+          </div>
+
+          {/* Bottom float decorations */}
+          <div className="absolute inset-x-0 bottom-[14%] h-[24%] z-[23] pointer-events-none">
+            <img
+              src="https://i.postimg.cc/7YmCK6qs/bang-bang-tang1.png"
+              className="absolute bottom-[36%] right-[8%] w-[8.5%] max-w-[42px] object-contain cursor-pointer pointer-events-auto filter drop-shadow-[1px_1.5px_3px_rgba(0,0,0,0.12)] animate-float-slow"
+              onClick={playRetroBubble}
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/3xqkHc49/tang-guo.png"
+              className="absolute bottom-[60%] left-[10%] w-[7%] max-w-[28px] object-contain cursor-pointer pointer-events-auto filter drop-shadow-[1px_1px_2px_rgba(0,0,0,0.1)] animate-float-gentle"
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/htYXq5zs/tang-guo2.png"
+              className="absolute bottom-[10%] right-[13%] w-[7%] max-w-[28px] object-contain cursor-pointer pointer-events-auto filter drop-shadow-[1px_1px_2px_rgba(0,0,0,0.1)]"
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute bottom-[36%] left-[18%] w-[4.5%] max-w-[18px] object-contain opacity-60 animate-pulse-glow"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Main Action Button */}
+          <div className="absolute bottom-[6.5%] left-1/2 -translate-x-1/2 z-[32] w-[78%] max-w-[360px] flex flex-col items-center">
+            <button
+              onClick={handleStartAttempt}
+              className="w-full bg-transparent cursor-pointer focus:outline-none transition-transform active:scale-95 filter drop-shadow-[0_4px_12px_rgba(34,197,94,0.3)] group"
+            >
+              <img
+                src="https://i.postimg.cc/fRPVhrtZ/kai-qi-hui-yi.png"
+                className="w-full h-auto object-contain transition-all group-hover:brightness-[1.05]"
+                referrerPolicy="no-referrer"
+              />
+            </button>
+          </div>
+
+          {/* Footer brand stamp */}
+          <div className="absolute bottom-[2%] left-1/2 -translate-x-1/2 z-[32] text-center w-full">
+            <span className="text-[8.5px] text-emerald-900/55 font-black uppercase tracking-wider">
+              WAHAHA 哇哈哈 · 30周年经典纪念系列 H5
+            </span>
+          </div>
+
+          {/* Modal Overlay popups */}
+          {showModal && (
+            <div className="absolute inset-0 bg-emerald-950/60 backdrop-blur-[6px] z-[100] flex items-center justify-center p-5 pointer-events-auto">
+              <div className="bg-[#FFFDF3] border-4 border-emerald-950 p-6 rounded-[32px] shadow-[4px_6px_0px_#064e3b] max-w-[316px] w-full flex flex-col gap-4 relative text-center">
+                
+                {/* Close modal */}
+                <button 
+                  onClick={() => { playRetroClick(); setShowModal(false); }}
+                  className="absolute -top-3.5 -right-3.5 text-emerald-950 font-black bg-white border-3 border-emerald-950 w-8 h-8 flex items-center justify-center rounded-full hover:scale-110 transition-transform shadow-[1px_2px_0px_rgba(0,0,0,1)] text-[13px]"
+                >
+                  ✕
+                </button>
+
+                <div className="flex flex-col items-center gap-1.5 mt-1">
+                  <h3 className="text-emerald-950 font-black text-sm tracking-wide bg-yellow-300 py-1 px-4 rounded-xl border-2 border-emerald-950 shadow-[1.5px_2px_0px_#000]">
+                    童年时光机·入舱凭证
+                  </h3>
+                  <p className="text-[10px] text-emerald-900/60 font-bold max-w-[200px] leading-snug">
+                    留下你的童真代码，测一测你是哪种独特口味的 AD 钙奶！
+                  </p>
+                </div>
+
+                <div className="flex flex-col text-left gap-1 mt-1">
+                  <label className="text-[10px] text-emerald-950 font-extrabold px-1">
+                    输入你的童趣名字
+                  </label>
+                  <input
+                    type="text"
+                    maxLength={10}
+                    value={name}
+                    onChange={(e) => {
+                      setName(e.target.value);
+                      if (e.target.value.trim()) setErrorMsg('');
+                    }}
+                    placeholder="例如：娃娃 / 哈哈"
+                    className="w-full bg-[#EBF7EE] border-2 border-emerald-950 rounded-2xl px-3 py-2 text-xs font-bold text-emerald-950 placeholder-emerald-900/40 text-center focus:outline-none focus:bg-white focus:ring-2 focus:ring-emerald-500 transition-all shadow-inner"
+                  />
+                </div>
+
+                <div className="flex flex-col text-left gap-1">
+                  <label className="text-[10px] text-emerald-950 font-extrabold px-1">
+                    选择你的冒险家身份
+                  </label>
+                  <div className="grid grid-cols-2 gap-2.5">
+                    <button
+                      onClick={() => { setSelectedGender('boy'); playRetroClick(); }}
+                      className={`py-2 rounded-xl font-black text-xs cursor-pointer flex items-center justify-center gap-1 transition-all border-2 ${
+                        selectedGender === 'boy'
+                          ? 'bg-sky-200 border-emerald-950 text-sky-950 shadow-[1px_2px_0px_#064e3b]'
+                          : 'bg-white border-transparent text-gray-400 hover:bg-slate-50'
+                      }`}
+                    >
+                      小男孩
+                    </button>
+                    <button
+                      onClick={() => { setSelectedGender('girl'); playRetroClick(); }}
+                      className={`py-2 rounded-xl font-black text-xs cursor-pointer flex items-center justify-center gap-1 transition-all border-2 ${
+                        selectedGender === 'girl'
+                          ? 'bg-rose-200 border-emerald-950 text-rose-950 shadow-[1px_2px_0px_#064e3b]'
+                          : 'bg-white border-transparent text-gray-400 hover:bg-slate-50'
+                      }`}
+                    >
+                      小女孩
+                    </button>
+                  </div>
+                </div>
+
+                {errorMsg && (
+                  <p className="text-[9px] text-red-500 font-extrabold leading-tight text-center mt-1 bg-red-50 py-1 px-2.5 rounded-lg border border-red-200">
+                    {errorMsg}
+                  </p>
+                )}
+
+                <button
+                  onClick={handleRegisterAndStart}
+                  className="w-full bg-red-400 hover:bg-red-510 text-white font-black text-xs py-2.5 rounded-2xl border-2 border-emerald-950 shadow-[2px_3px_0px_#064e3b] mt-2 transition-transform active:scale-95"
+                >
+                  启动时光机，触发穿越！
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    // --- QUESTION PAGE ---
+    function QuestionPage({ question, currentIndex, totalQuestions, userName, onSelectOption, onGoBack }) {
+      const [selectedId, setSelectedId] = useState(null);
+
+      const handleSelect = (option) => {
+        if (selectedId) return;
+        setSelectedId(option.id);
+        playRetroOption();
+
+        setTimeout(() => {
+          onSelectOption(option);
+          setSelectedId(null);
+        }, 550);
+      };
+
+      const progressPercent = Math.round(((currentIndex + 1) / totalQuestions) * 100);
+      const progressFlavors = [
+        'original', 'lactic', 'collagen', 'peach', 'strawberry'
+      ];
+      const currentFlavorImg = FLAVOR_IMAGES[progressFlavors[currentIndex % progressFlavors.length]];
+
+      return (
+        <div className="w-full h-full relative overflow-hidden font-sans bg-[#E6F4EA]">
+          {/* Background and Frame */}
+          <img
+            src="https://i.postimg.cc/vZT4ksBD/bei-jing.png"
+            className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
+            referrerPolicy="no-referrer"
+          />
+          <img
+            src="https://i.postimg.cc/MpLn8FMz/bei-jing-kuang.png"
+            className="absolute inset-0 w-full h-full object-fill z-10 pointer-events-none"
+            referrerPolicy="no-referrer"
+          />
+
+          {/* Nostalgic toys float backdrop */}
+          <div className="absolute inset-0 z-[12] pointer-events-none opacity-60">
+            {currentIndex === 0 && (
+              <div className="absolute top-[18%] right-[12%] w-10 h-10 animate-float-gentle">
+                <GlassMarble />
+              </div>
+            )}
+            {currentIndex === 1 && (
+              <div className="absolute bottom-[22%] left-[10%] w-12 h-12 animate-float-slow">
+                <WaterGun />
+              </div>
+            )}
+            {currentIndex === 2 && (
+              <div className="absolute top-[15%] left-[12%] w-10 h-10 animate-float-gentle">
+                <Joystick />
+              </div>
+            )}
+
+            {/* Sparkling Star */}
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute top-[14%] right-[14%] w-6 h-6 object-contain opacity-50 animate-pulse-glow"
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute bottom-[28%] right-[12%] w-7 h-7 object-contain opacity-40 animate-pulse-glow"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Brand icon Top-Right */}
+          <div className="absolute top-[3.5%] right-[5.5%] z-[12] w-[13.5%] max-w-[55px] opacity-75 pointer-events-none">
+            <img
+              src="https://i.postimg.cc/vBFD4xvd/wa-ha-halogo.png"
+              className="w-full h-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Main Controls Overlay panel */}
+          <div className="absolute inset-0 z-[20] flex flex-col pt-[7.5%] pb-[4%] px-[9.5%] pointer-events-none">
+            
+            <div className="w-full flex flex-col gap-2 pointer-events-auto">
+              <div className="flex justify-between items-center gap-2">
+                <button
+                  onClick={() => { playRetroClick(); onGoBack(); }}
+                  className="bg-red-500 hover:bg-red-600 text-white border border-emerald-950 px-2.5 py-1 rounded-full flex items-center justify-center gap-1 cursor-pointer font-extrabold text-[10px] shadow-[2px_2px_0px_rgba(0,0,0,1)] active:translate-y-[1px]"
+                >
+                  返回
+                </button>
+                
+                <div className="flex gap-1.5 items-center mr-[14%]">
+                  <span className="bg-emerald-950/20 px-2 py-0.5 rounded-full border border-emerald-950/10 text-emerald-950 text-[10px] font-extrabold">
+                    {userName}
+                  </span>
+                  <span className="bg-emerald-900 border border-emerald-950 px-2 py-0.5 rounded-full text-white text-[10px] font-bold">
+                    {currentIndex + 1} / {totalQuestions}
+                  </span>
+                </div>
+              </div>
+
+              {/* Milk bar level and floating flavor bottle indicator */}
+              <div className="w-full bg-emerald-950/10 border-2 border-emerald-950 rounded-full h-5 relative flex items-center pr-1.5 mt-1.5">
+                <div className="w-full h-full rounded-full overflow-hidden p-0.5 relative flex items-center">
+                  <div
+                    className="bg-white rounded-full h-full flex items-center justify-end pr-2 font-mono text-[8px] font-black text-emerald-900 shadow-sm transition-all duration-300"
+                    style={{ width: `${progressPercent}%` }}
+                  >
+                    {progressPercent > 12 && <span>{progressPercent}%</span>}
+                  </div>
+                </div>
+                
+                <div
+                  className="absolute -top-[24px] z-30 transition-all duration-300 animate-float-gentle"
+                  style={{ left: `calc(${progressPercent}% - 14px)` }}
+                >
+                  <img
+                    src={currentFlavorImg}
+                    className="w-7 h-11 object-contain filter drop-shadow-[1px_2px_2px_rgba(0,0,0,0.18)]"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Question Card Content - Configured with top-fixed positioning & flexible min-height to prevent jumping while seamlessly housing longer texts */}
+            <div className="bg-white/95 border-3 border-emerald-950 rounded-3xl p-5 shadow-[4px_5px_0px_rgba(4,47,15,0.25)] pointer-events-auto flex flex-col justify-between mt-4 mb-auto w-full max-w-[355px] shrink-0 self-center min-h-[435px] h-auto">
+              <div className="flex flex-col gap-3">
+                <div className="bg-yellow-300 border border-emerald-950 py-0.5 px-3.5 rounded-full text-[9.5px] font-extrabold text-emerald-950 w-fit self-start shadow-[1px_1.5px_0px_#000]">
+                  场景：{question.title}
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-emerald-950 text-[14.5px] md:text-[15.5px] font-black leading-relaxed tracking-normal">
+                    {question.subtitle}
+                  </h2>
+                </div>
+              </div>
+
+              {/* Options mapping */}
+              <div className="flex flex-col gap-2.5 mt-auto pt-2">
+                {question.options.map((option) => {
+                  const isSelected = selectedId === option.id;
+                  return (
+                    <button
+                      key={option.id}
+                      onClick={() => handleSelect(option)}
+                      className={`w-full text-left py-2 px-3.5 min-h-[46px] rounded-xl border-2 font-bold text-[12px] md:text-[13px] tracking-wide transition-all flex items-center gap-3 cursor-pointer select-none ${
+                        isSelected
+                          ? 'bg-yellow-300 border-emerald-950 text-emerald-950 font-black shadow-[2px_2.5px_0px_rgba(0,0,0,1)]'
+                          : 'bg-emerald-50/60 hover:bg-emerald-50 text-emerald-900 border-emerald-950/20 shadow-[1px_1.5px_0px_rgba(0,0,0,0.06)] active:scale-98'
+                      }`}
+                    >
+                      <span className={`w-6 h-6 shrink-0 flex items-center justify-center rounded-full text-[10.5px] font-extrabold border-2 border-emerald-950 ${
+                        isSelected ? 'bg-emerald-950 text-yellow-300' : 'bg-white text-emerald-800'
+                      }`}>
+                        {option.id.charAt(1)}
+                      </span>
+                      
+                      <span className="leading-snug">{option.text}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Footer motto */}
+            <div className="w-full text-center mt-auto py-1">
+              <p className="text-[8px] text-emerald-900/60 font-bold tracking-wider uppercase">
+                陪你酸酸甜甜 · 懂你可可爱爱
+              </p>
+            </div>
+
+          </div>
+        </div>
+      );
+    }
+
+    // --- RESULT PAGE ---
+    function ResultPage({ answers, userName, selectedGender, onRestart, onGoBack }) {
+      const [flavor, setFlavor] = useState('original');
+      const [downloading, setDownloading] = useState(false);
+      const posterRef = useRef(null);
+
+      useEffect(() => {
+        const scores = { original: 0, strawberry: 0, peach: 0, collagen: 0, lactic: 0 };
+        answers.forEach((ans) => {
+          const tally = ans.flavorScores;
+          if (tally.original) scores.original += tally.original;
+          if (tally.strawberry) scores.strawberry += tally.strawberry;
+          if (tally.peach) scores.peach += tally.peach;
+          if (tally.collagen) scores.collagen += tally.collagen;
+          if (tally.lactic) scores.lactic += tally.lactic;
+        });
+
+        let maxFlavor = 'original';
+        let maxVal = -1;
+        Object.keys(scores).forEach((f) => {
+          if (scores[f] > maxVal) {
+            maxVal = scores[f];
+            maxFlavor = f;
+          }
+        });
+
+        setFlavor(maxFlavor);
+        playRetroSuccess();
+      }, [answers]);
+
+      const result = PERSONALITY_RESULTS[flavor] || PERSONALITY_RESULTS.original;
+
+      const flavorBanners = {
+        original: { text: "经典原味 AD", color: 'bg-emerald-100 text-emerald-950 border-emerald-300' },
+        strawberry: { text: "甜美草莓味", color: 'bg-rose-100 text-rose-950 border-rose-300' },
+        peach: { text: "元气水蜜桃", color: 'bg-orange-100 text-orange-950 border-orange-300' },
+        collagen: { text: "水灵胶原蛋白", color: 'bg-purple-100 text-purple-950 border-purple-300' },
+        lactic: { text: "沁心乳酸菌", color: 'bg-sky-100 text-sky-950 border-sky-300' }
+      }[flavor];
+
+      const FLAVOR_HEX_COLORS = {
+        original: '#047857',
+        strawberry: '#db2777',
+        peach: '#ea580c',
+        collagen: '#7c3aed',
+        lactic: '#2563eb'
+      };
+
+      const handleDownload = async () => {
+        playRetroClick();
+        setDownloading(true);
+        
+        try {
+          const canvas = document.createElement('canvas');
+          canvas.width = 640;
+          canvas.height = 1000;
+          const ctx = canvas.getContext('2d');
+          if (ctx) {
+            const bottleImg = new Image();
+            bottleImg.crossOrigin = 'anonymous';
+            bottleImg.src = FLAVOR_IMAGES[flavor];
+
+            await new Promise((resolve) => {
+              bottleImg.onload = () => {
+                try {
+                  const grad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                  grad.addColorStop(0, '#FFFFFF');
+                  grad.addColorStop(1, '#E6F4EA');
+                  ctx.fillStyle = grad;
+                  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                  ctx.fillStyle = 'rgba(34, 197, 94, 0.04)';
+                  for (let x = 0; x < canvas.width; x += 16) ctx.fillRect(x, 0, 1, canvas.height);
+                  for (let y = 0; y < canvas.height; y += 16) ctx.fillRect(0, y, canvas.width, 1);
+
+                  // Card border (matched to the new premium borderless/soft design)
+                  ctx.fillStyle = '#FFFFFF';
+                  ctx.rect(30, 30, canvas.width - 60, canvas.height - 60);
+                  ctx.fill();
+                  
+                  ctx.strokeStyle = 'rgba(6, 78, 59, 0.1)';
+                  ctx.lineWidth = 2;
+                  ctx.stroke();
+
+                  ctx.fillStyle = '#064e3b';
+                  ctx.fillRect(50, 50, 160, 32);
+                  ctx.fillStyle = '#FFFFFF';
+                  ctx.font = 'bold 12px sans-serif';
+                  ctx.textAlign = 'center';
+                  ctx.fillText('娃哈哈 · 时光机芯片', 130, 71);
+
+                  ctx.textAlign = 'right';
+                  ctx.fillStyle = '#4b5563';
+                  ctx.fillText('30周年纪念专属报告', canvas.width - 50, 71);
+
+                  ctx.textAlign = 'left';
+                  ctx.fillStyle = '#064e3b';
+                  ctx.font = 'bold 28px sans-serif';
+                  ctx.fillText(result.title, 50, 125);
+
+                  ctx.fillStyle = '#ef4444';
+                  ctx.font = 'bold 15px sans-serif';
+                  ctx.fillText(`【 专属MBTI: ${result.mbti} 】`, 50, 155);
+
+                  ctx.fillStyle = '#6b7280';
+                  ctx.font = 'bold italic 13px sans-serif';
+                  ctx.fillText(`“ ${result.tagline} ”`, 50, 180);
+
+                  ctx.strokeStyle = '#064e3b';
+                  ctx.lineWidth = 1.5;
+                  ctx.beginPath();
+                  ctx.moveTo(50, 198);
+                  ctx.lineTo(canvas.width - 50, 198);
+                  ctx.stroke();
+
+                  ctx.fillStyle = '#fafdfb';
+                  ctx.fillRect(50, 215, 170, 220);
+                  ctx.strokeRect(50, 215, 170, 220);
+
+                  ctx.fillStyle = 'rgba(6, 78, 59, 0.08)';
+                  ctx.beginPath();
+                  ctx.ellipse(135, 395, 45, 7, 0, 0, Math.PI * 2);
+                  ctx.fill();
+
+                  const bWidth = 90;
+                  const bHeight = 175;
+                  ctx.drawImage(bottleImg, 135 - bWidth / 2, 225, bWidth, bHeight);
+
+                  const themeHex = FLAVOR_HEX_COLORS[flavor] || '#047857';
+                  ctx.fillStyle = themeHex;
+                  ctx.fillRect(75, 388, 120, 22);
+                  ctx.fillStyle = '#FFFFFF';
+                  ctx.font = 'bold 11px sans-serif';
+                  ctx.textAlign = 'center';
+                  ctx.fillText(flavorBanners.text, 135, 403);
+                  ctx.textAlign = 'left';
+
+                  ctx.fillStyle = '#064e3b';
+                  ctx.font = 'bold 12px sans-serif';
+                  ctx.fillText('元气值 E / I', 245, 238);
+                  ctx.fillStyle = '#4b5563';
+                  ctx.fillText(result.mbtiDetails.energy, 510, 238);
+
+                  ctx.fillStyle = '#e5e7eb';
+                  ctx.fillRect(245, 248, 345, 10);
+                  ctx.fillStyle = '#10b981';
+                  ctx.fillRect(246, 249, 343 * 0.85, 8);
+
+                  ctx.fillStyle = '#064e3b';
+                  ctx.font = 'bold 12px sans-serif';
+                  ctx.fillText('脑洞值 N / S', 245, 298);
+                  ctx.fillStyle = '#4b5563';
+                  ctx.fillText(result.mbtiDetails.info, 510, 298);
+
+                  ctx.fillStyle = '#e5e7eb';
+                  ctx.fillRect(245, 308, 345, 10);
+                  ctx.fillStyle = '#f43f5e';
+                  ctx.fillRect(246, 309, 343 * 0.78, 8);
+
+                  ctx.fillStyle = '#064e3b';
+                  ctx.font = 'bold 12px sans-serif';
+                  ctx.fillText('酸甜感性 F / T', 245, 358);
+                  ctx.fillStyle = '#4b5563';
+                  ctx.fillText(result.mbtiDetails.decision, 510, 358);
+
+                  ctx.fillStyle = '#e5e7eb';
+                  ctx.fillRect(245, 368, 345, 10);
+                  ctx.fillStyle = '#fbbf24';
+                  ctx.fillRect(246, 369, 343 * 0.92, 8);
+
+                  ctx.fillStyle = '#064e3b';
+                  ctx.font = 'bold 12px sans-serif';
+                  ctx.fillText(`时光守护人: ${userName} (${selectedGender === 'boy' ? '勇敢小男孩' : '元气小女孩'})`, 245, 415);
+
+                  ctx.strokeStyle = 'rgba(6, 78, 59, 0.15)';
+                  ctx.beginPath();
+                  ctx.moveTo(50, 455);
+                  ctx.lineTo(canvas.width - 50, 455);
+                  ctx.stroke();
+
+                  ctx.fillStyle = '#fafdfb';
+                  ctx.fillRect(50, 475, 540, 160);
+                  ctx.strokeRect(50, 475, 540, 160);
+
+                  ctx.fillStyle = '#374151';
+                  ctx.font = '14px sans-serif';
+                  const text = result.description;
+                  let line = '';
+                  let textY = 505;
+                  const maxTextWidth = 500;
+                  const lineHeight = 24;
+
+                  for (let n = 0; n < text.length; n++) {
+                    const testLine = line + text[n];
+                    if (ctx.measureText(testLine).width > maxTextWidth) {
+                      ctx.fillText(line, 70, textY);
+                      line = text[n];
+                      textY += lineHeight;
+                    } else {
+                      line = testLine;
+                    }
+                  }
+                  ctx.fillText(line, 70, textY);
+
+                  ctx.fillStyle = '#fffbeb';
+                  ctx.fillRect(50, 650, 260, 75);
+                  ctx.strokeRect(50, 650, 260, 75);
+                  ctx.fillStyle = '#b45309';
+                  ctx.font = 'bold 11px sans-serif';
+                  ctx.fillText('童心守护法宝 🔑', 65, 675);
+                  ctx.fillStyle = '#374151';
+                  ctx.font = 'bold 14px sans-serif';
+                  ctx.fillText(result.vintageObject, 65, 705);
+
+                  ctx.fillStyle = '#faf5ff';
+                  ctx.fillRect(330, 650, 260, 75);
+                  ctx.strokeRect(330, 650, 260, 75);
+                  ctx.fillStyle = '#6b21a8';
+                  ctx.font = 'bold 11px sans-serif';
+                  ctx.fillText('酸甜契合伙伴 🌟', 345, 675);
+                  ctx.fillStyle = '#374151';
+                  ctx.font = 'bold 14px sans-serif';
+                  ctx.fillText(result.goldenRatio.split(' · ')[0], 345, 705);
+
+                  ctx.strokeStyle = '#064e3b';
+                  ctx.setLineDash([4, 4]);
+                  ctx.beginPath();
+                  ctx.moveTo(50, 745);
+                  ctx.lineTo(canvas.width - 50, 745);
+                  ctx.stroke();
+                  ctx.setLineDash([]);
+
+                  ctx.fillStyle = '#ffffff';
+                  ctx.fillRect(50, 765, 80, 80);
+                  ctx.strokeRect(50, 765, 80, 80);
+                  ctx.strokeStyle = '#ef4444';
+                  ctx.lineWidth = 1.5;
+                  ctx.strokeRect(55, 770, 70, 70);
+                  ctx.fillStyle = '#ef4444';
+                  ctx.font = 'bold 9px sans-serif';
+                  ctx.fillText('AD CALCIUM', 61, 792);
+                  ctx.fillText('时光印记', 72, 812);
+                  ctx.fillText('★ 1996 ★', 68, 830);
+
+                  ctx.fillStyle = '#064e3b';
+                  ctx.font = 'bold 12px sans-serif';
+                  ctx.fillText('📌 童年生命轨迹:', 150, 785);
+
+                  ctx.fillStyle = '#6b7280';
+                  ctx.font = 'italic 12px sans-serif';
+                  const sceneText = result.childhoodScene;
+                  let sceneLine = '';
+                  let sceneY = 810;
+                  const maxSceneWidth = 430;
+
+                  for (let m = 0; m < sceneText.length; m++) {
+                    const testSceneLine = sceneLine + sceneText[m];
+                    if (ctx.measureText(testSceneLine).width > maxSceneWidth) {
+                      ctx.fillText(sceneLine, 150, sceneY);
+                      sceneLine = sceneText[m];
+                      sceneY += 20;
+                    } else {
+                      sceneLine = testSceneLine;
+                    }
+                  }
+                  ctx.fillText(sceneLine, 150, sceneY);
+
+                  ctx.fillStyle = '#064e3b';
+                  ctx.font = 'bold 11px sans-serif';
+                  ctx.fillText('哇哈哈30周年特别专属 · 陪你酸酸甜甜 懂你可可爱爱', 50, canvas.height - 70);
+                  ctx.font = '10px sans-serif';
+                  ctx.fillText('WAHAHA AD CALCIUM MILK Co., Ltd. ALL RIGHTS RESERVED.', 50, canvas.height - 50);
+
+                } catch (e) {
+                  console.error(e);
+                }
+                resolve();
+              };
+
+              bottleImg.onerror = () => {
+                resolve();
+              };
+              setTimeout(resolve, 800);
+            });
+
+            const dataURL = canvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = `WAHAHA_30th_${userName}_ChildhoodPersonality.png`;
+            link.href = dataURL;
+            link.click();
+          }
+        } catch (err) {
+          console.error("Canvas image export failed:", err);
+        } finally {
+          setTimeout(() => setDownloading(false), 800);
+        }
+      };
+
+      return (
+        <div className="w-full h-full relative overflow-hidden font-sans bg-[#E6F4EA]">
+          {/* Background and outline */}
+          <img
+            src="https://i.postimg.cc/vZT4ksBD/bei-jing.png"
+            className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
+            referrerPolicy="no-referrer"
+          />
+          <img
+            src="https://i.postimg.cc/MpLn8FMz/bei-jing-kuang.png"
+            className="absolute inset-0 w-full h-full object-fill z-10 pointer-events-none"
+            referrerPolicy="no-referrer"
+          />
+
+          {/* Floating toys */}
+          <div className="absolute inset-0 z-[12] pointer-events-none opacity-60">
+            <img
+              src="https://i.postimg.cc/mDfhP1yK/xing-xing.png"
+              className="absolute top-[14%] right-[14%] w-6 h-6 object-contain animate-spin-slow"
+              referrerPolicy="no-referrer"
+            />
+            <img
+              src="https://i.postimg.cc/htYXq5zs/tang-guo2.png"
+              className="absolute bottom-[28%] left-[12%] w-6 h-6 object-contain animate-float-gentle"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          <div className="absolute top-[3.5%] right-[5.5%] z-[12] w-[13.5%] max-w-[55px] opacity-75 pointer-events-none">
+            <img
+              src="https://i.postimg.cc/vBFD4xvd/wa-ha-halogo.png"
+              className="w-full h-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Scrollable Result Card container */}
+          <div className="absolute inset-0 z-[20] flex flex-col pt-[7.5%] pb-[6%] px-[6.5%] overflow-y-auto pointer-events-auto gap-4 custom-scroll scrollbar-hidden">
+            
+            <div className="text-center w-full z-10 mt-1 flex flex-col items-center">
+              <span className="bg-emerald-900 border border-emerald-950 text-white font-extrabold text-[10px] px-3.5 py-0.5 rounded-full uppercase tracking-wide shadow-[1px_1.5px_0px_rgba(0,0,0,1)]">
+                年代纪念 · 专属人格报告
+              </span>
+            </div>
+
+            {/* Spacious, borderless report layout sitting naturally directly on the green background */}
+            <div ref={posterRef} className="flex flex-col gap-4 max-w-[365px] w-full mx-auto relative z-10 my-2 px-1">
+              
+              {/* Tag Ribbon */}
+              <div className="bg-emerald-800 border border-emerald-900 text-white font-extrabold text-[9px] py-0.5 px-3 rounded-md w-fit shadow-[1.5px_1.5px_0px_rgba(0,0,0,1)] flex items-center gap-1.5 self-start">
+                <span>{userName} 的时光机舱卡 </span>
+              </div>
+
+              {/* Title & MBTI code with comfortable spacing */}
+              <div className="flex justify-between items-start mt-1 px-1">
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-emerald-950 font-black text-[22px] md:text-[24px] leading-tight tracking-tight">
+                    {result.title}
+                  </h2>
+                  <p className="font-extrabold text-red-500 text-[11px] tracking-wide uppercase">
+                    专属芯片: {result.mbti}
+                  </p>
+                  <p className="text-emerald-900/70 font-semibold italic text-[10px] mt-1 pr-1">
+                    “ {result.tagline} ”
+                  </p>
+                </div>
+
+                {/* Avatar identity tag */}
+                <div className="shrink-0 flex items-center bg-yellow-300 border-2 border-emerald-950 px-2.5 py-1 rounded-xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                  <span className="text-[9px] text-emerald-950 font-black whitespace-nowrap">
+                    {selectedGender === 'boy' ? '👦 勇敢小男孩' : '👧 元气小女孩'}
+                  </span>
+                </div>
+              </div>
+
+              {/* Split info board */}
+              <div className="grid grid-cols-5 gap-3 bg-white/40 border border-emerald-950/10 rounded-2xl p-3 shadow-sm items-center mt-1">
+                {/* Visual product mock */}
+                <div className="col-span-2 flex flex-col items-center justify-center p-1.5 bg-white rounded-xl border border-emerald-950/10 shadow-inner relative">
+                  <img
+                    src={FLAVOR_IMAGES[flavor]}
+                    alt={`${flavor} bottle`}
+                    className="w-full h-22 md:h-24 object-contain"
+                    onClick={() => { playRetroBubble(); }}
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className={`mt-1 text-[8px] font-black px-1.5 py-0.5 rounded-full border border-emerald-950/20 ${flavorBanners.color}`}>
+                    {flavorBanners.text}
+                  </div>
+                </div>
+                
+                {/* Meter scores with elegant spacing and labels */}
+                <div className="col-span-3 flex flex-col justify-center gap-2.5 text-[8.5px] font-bold text-emerald-950">
+                  {/* E/I */}
+                  <div>
+                    <div className="flex justify-between text-[8px] scale-95 leading-none mb-0.5">
+                      <span className="font-black">元气值 E / I</span>
+                      <span className="text-emerald-900/60 font-black">{result.mbtiDetails.energy}</span>
+                    </div>
+                    <div className="w-full h-2 bg-white/75 border border-emerald-950/25 rounded-full overflow-hidden p-[1px]">
+                      <div className="h-full bg-emerald-500 rounded-full" style={{ width: '85%' }} />
+                    </div>
+                  </div>
+
+                  {/* N/S */}
+                  <div>
+                    <div className="flex justify-between text-[8px] scale-95 leading-none mb-0.5">
+                      <span className="font-black">脑洞值 N / S</span>
+                      <span className="text-emerald-900/60 font-black">{result.mbtiDetails.info}</span>
+                    </div>
+                    <div className="w-full h-2 bg-white/75 border border-emerald-950/25 rounded-full overflow-hidden p-[1px]">
+                      <div className="h-full bg-rose-500 rounded-full" style={{ width: '78%' }} />
+                    </div>
+                  </div>
+
+                  {/* F/T */}
+                  <div>
+                    <div className="flex justify-between text-[8px] scale-95 leading-none mb-0.5">
+                      <span className="font-black">酸甜感性 F / T</span>
+                      <span className="text-emerald-900/60 font-black">{result.mbtiDetails.decision}</span>
+                    </div>
+                    <div className="w-full h-2 bg-white/75 border border-emerald-950/25 rounded-full overflow-hidden p-[1px]">
+                      <div className="h-full bg-yellow-400 rounded-full" style={{ width: '92%' }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Personality description with beautiful block styling */}
+              <div className="bg-white/30 border border-emerald-950/10 rounded-2xl p-3 shadow-none mt-1">
+                <p className="text-[10.5px] md:text-[11px] text-emerald-950/85 leading-relaxed font-sans font-medium font-medium">
+                  {result.description}
+                </p>
+              </div>
+
+              {/* Matching rows with spacious padding */}
+              <div className="grid grid-cols-2 gap-3 text-[10px] font-bold mt-1">
+                <div className="bg-yellow-100/35 border border-emerald-950/10 rounded-2xl p-2.5 flex flex-col justify-center shadow-sm">
+                  <p className="text-[8px] text-amber-950 font-black leading-none">🎒 童心守护法宝</p>
+                  <p className="text-emerald-950 font-bold font-sans mt-2 leading-none text-[10px]">{result.vintageObject}</p>
+                </div>
+
+                <div className="bg-purple-100/35 border border-emerald-950/10 rounded-2xl p-2.5 flex flex-col justify-center shadow-sm">
+                  <p className="text-[8px] text-purple-950 font-black leading-none font-sans">🍬 酸甜契合伙伴</p>
+                  <p className="text-emerald-950 font-bold font-sans mt-2 leading-none text-[10px]">{result.goldenRatio.split(' · ')[0]}</p>
+                </div>
+              </div>
+
+              {/* Mini QR stamp block with dashed line separation */}
+              <div className="border-t border-dashed border-emerald-950/15 pt-3 mt-2.5 flex items-center gap-3">
+                <div className="w-9 h-9 bg-white border border-dashed border-emerald-950/30 rounded flex items-center justify-center p-1 shrink-0 rotate-[-3deg] shadow-sm">
+                  <svg viewBox="0 0 24 24" className="w-full h-full text-[#111827]">
+                    <path d="M 0 0 H 8 V 8 H 0 Z M 2 2 H 6 V 6 H 2 Z" />
+                    <path d="M 16 0 H 24 V 8 H 16 Z M 18 2 H 22 V 6 H 18 Z" />
+                    <path d="M 0 16 H 8 V 24 H 0 Z M 2 18 H 6 V 22 H 2 Z" />
+                    <path d="M 10 10 H 14 V 14 H 10 Z" />
+                    <rect x="16" y="16" width="3" height="3" />
+                    <rect x="20" y="20" width="3" height="3" />
+                  </svg>
+                </div>
+                <div className="flex flex-col text-[8.5px] text-emerald-900/60 font-sans leading-tight">
+                  <p className="font-extrabold text-emerald-950">📌 童年足迹:</p>
+                  <p className="italic text-gray-600">{result.childhoodScene}</p>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Bottom button controls */}
+            <div className="flex flex-col gap-1.5 w-full max-w-[360px] mx-auto z-10 mb-1">
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  onClick={handleDownload}
+                  disabled={downloading}
+                  className="bg-red-500 hover:bg-red-600 text-white font-extrabold text-[12px] py-2 rounded-xl border border-emerald-950 shadow-sm cursor-pointer active:scale-98"
+                >
+                  {downloading ? '保存中...' : '保存纪念海报'}
+                </button>
+                
+                <button
+                  onClick={() => { playRetroClick(); onRestart(); }}
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-[12px] py-1.5 rounded-xl border border-emerald-950 shadow-sm cursor-pointer active:scale-98"
+                >
+                  重温回忆之旅
+                </button>
+              </div>
+
+              <button
+                onClick={() => { playRetroClick(); onGoBack(); }}
+                className="w-full bg-white hover:bg-gray-100 text-slate-700 font-bold py-1 px-3 rounded-lg border border-emerald-950/30 text-[9px] cursor-pointer"
+              >
+                返回上一步，重新选择
+              </button>
+
+              <p className="text-[7.5px] text-center text-emerald-950/60 font-semibold uppercase leading-none mt-0.5">
+                截图并保存海报后分享吧 · 哇哈哈 30 周年纪念
+              </p>
+            </div>
+
+          </div>
+        </div>
+      );
+    }
+
+    // --- MAIN APP FRAME CONTROLLER (Strictly styled viewport with centered phone view for flawless aspect scaling) ---
+    function App() {
+      const [page, setPage] = useState('cover');
+      const [userName, setUserName] = useState('时光死党');
+      const [selectedGender, setSelectedGender] = useState('boy');
+      const [currentIndex, setCurrentIndex] = useState(0);
+      const [answers, setAnswers] = useState([]);
+
+      const startQuiz = (name, gender) => {
+        setUserName(name);
+        setSelectedGender(gender);
+        setAnswers([]);
+        setCurrentIndex(0);
+        setPage('q1');
+        playRetroPage();
+      };
+
+      const handleSelectOption = (option) => {
+        const updated = [...answers, option];
+        setAnswers(updated);
+
+        if (currentIndex < QUESTIONS.length - 1) {
+          setCurrentIndex(prev => prev + 1);
+          setPage(`q${currentIndex + 2}`);
+          playRetroPage();
+        } else {
+          setPage('result');
+          playRetroPage();
+        }
+      };
+
+      const handleGoBack = () => {
+        playRetroPage();
+        if (page === 'cover') return;
+
+        if (page === 'result') {
+          setCurrentIndex(QUESTIONS.length - 1);
+          setAnswers(prev => prev.slice(0, -1));
+          setPage(`q${QUESTIONS.length}`);
+          return;
+        }
+
+        if (currentIndex === 0) {
+          setPage('cover');
+          setAnswers([]);
+        } else {
+          const prevIdx = currentIndex - 1;
+          setCurrentIndex(prevIdx);
+          setAnswers(prev => prev.slice(0, -1));
+          setPage(`q${prevIdx + 1}`);
+        }
+      };
+
+      const handleRestart = () => {
+        setPage('cover');
+        setAnswers([]);
+        setCurrentIndex(0);
+        playRetroPage();
+      };
+
+      const renderView = () => {
+        if (page === 'cover') {
+          return <CoverPage onStartQuiz={startQuiz} />;
+        }
+        if (page === 'result') {
+          return (
+            <ResultPage
+              answers={answers}
+              userName={userName}
+              selectedGender={selectedGender}
+              onRestart={handleRestart}
+              onGoBack={handleGoBack}
+            />
+          );
+        }
+        return (
+          <QuestionPage
+            question={QUESTIONS[currentIndex]}
+            currentIndex={currentIndex}
+            totalQuestions={QUESTIONS.length}
+            userName={userName}
+            onSelectOption={handleSelectOption}
+            onGoBack={handleGoBack}
+          />
+        );
+      };
+
+      return (
+        <div className="w-screen h-screen bg-[#1E293B] retro-grid flex items-center justify-center p-0 md:p-6 select-none overflow-hidden relative">
+          
+          {/* Main H5 Container Shell adhering strictly to Aspect for Mobile and Desktop Adaptation */}
+          <div className="h5-container">
+
+            {/* Viewport container */}
+            <div className="w-full h-full flex-grow relative overflow-hidden">
+              {renderView()}
+            </div>
+          </div>
+
+        </div>
+      );
+    }
+
+    // Render inside the Mount Node
+    const root = ReactDOM.createRoot(document.getElementById('app-root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
